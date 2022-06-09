@@ -1,0 +1,25 @@
+.rowWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.colLeft , .colRight {
+    display: flex;
+    flex-direction: column;
+}
+
+.oneCard {
+    border-bottom: 8px solid transparent;
+}
+
+.twoCards {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border-bottom: 8px solid transparent;
+}   
+
+.row.inner {
+    justify-content: start;
+}

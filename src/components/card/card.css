@@ -5,8 +5,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
 }
-
 .cardImg {
     position: relative;
     object-fit: contain;
@@ -35,3 +35,22 @@
     background: linear-gradient(359.15deg, rgba(0, 0, 0, 0.677) 20.26%, rgba(0, 0, 0, 0) 99.23%);
     border-radius: 5px;
 }
+
+@media (max-width: 729px) { 
+    .cardContainer {
+      grid-template-columns: repeat(1, auto);
+    }
+
+    .side-menu:checked ~ .siteMenu {
+        max-height: 100%;
+        z-index: 99;
+        background-color: #000;
+    }
+
+    .side-menu:checked ~ .hamb .hamb-line::before {
+        background-color: #fff;
+    }
+    .side-menu:checked ~ .hamb .hamb-line::after {
+        background-color: #fff;
+    }
+ }
