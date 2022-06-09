@@ -4,7 +4,11 @@
     gap: 10px;
 }
 
+<<<<<<< HEAD
 .colLeft {
+=======
+.colLeft , .colRight {
+>>>>>>> 8f7d77ecc053aaa01981ff76e6f7fac51a0dba5e
     display: flex;
     flex-direction: column;
 }
