@@ -1,31 +1,42 @@
 .mainHeader {
     width: 100%;
     border-top: 3px solid #000;
-    height: 90px;
-    min-height: auto;
-    padding-bottom: 30px;
-    box-shadow: 2px 5px 13px 0px #0000001a;}
-
-.headerWrap {
-    max-width: 100%;
-	padding: 10px;
-	margin: auto;
+    box-shadow: 2px 5px 13px 0px #0000001a;
+    height: 80px;
+    margin-bottom: 20px;
 }
 
-.mainHeader .headerWrap {
+.container {
+    max-width: 1100px;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerWrap {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    height: 100%;
+    justify-content: space-between;
+    overflow: hidden;
 }
 
 .siteLogo {
     max-width: 100%;
-	height: auto;
+    height: auto;
 }
 
-.menuLinks li{
-    display: inline-block;
-    padding:20px
+.siteMenu {
+    max-width: 100%;
+    overflow:hidden;
+}
+
+.menuLinks {
+    display: flex;
+    list-style: none;
+}
+
+.menuLinks li {
+    margin-left: 20px;
 }
