@@ -11,3 +11,93 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.rowWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.colLeft, .colRight {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.largeTitle {
+  font-weight: 700;
+  font-size: 27px;
+  margin: 10px 0;
+}
+
+.medtitle {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.meta {
+  font-size: 12px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.tag {
+  color: blue;
+}
+
+.dateMeta {
+  color:#8c8c8c;
+}
+
+.metaSeperator::before{
+  content:"-";
+  padding: 0 3px;
+}
+
+.postContent {
+  line-height: 1.6875;
+  color: #505050;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+}
+
+.readMore {
+  color:black;
+  position: relative;
+  display: inline-block;
+  box-sizing: content-box;
+}
+
+.readMore::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: #000;
+}
+
+
+.blockTitle {
+  font-weight: 700;
+  font-size: 20px;
+  position: relative;
+}
+
+.blockTitle::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin-top: 10px;
+  background: #eee;
+}
+
+
+@media (max-width: 769px) { 
+  .rowWrapper {
+    flex-direction: column;
+    }
+  }

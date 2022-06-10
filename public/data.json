@@ -1,0 +1,25 @@
+{
+  "posts":  [
+        {
+            "title": "How to Donwload Paid iOS Apps for Free",
+            "excerpt": "Next, put some dummy JSON data inside this file. For demonstration purposes, the JSON data used in the example below is generated from JSON Generator. If you are using your own JSON, ensure that it is correctly formatted."
+        },
+        {
+            "title": "Minecraft – The Wild Update: How to Get Mud Blocks",
+            "excerpt": "Next, put some dummy JSON data inside this file. For demonstration purposes, the JSON data used in the example below is generated from JSON Generator. If you are using your own JSON, ensure that it is correctly formatted."
+        },
+        {
+            "title": "What Are the Rarest Fortnite Skins?",
+            "excerpt": "Next, put some dummy JSON data inside this file. For demonstration purposes, the JSON data used in the example below is generated from JSON Generator. If you are using your own JSON, ensure that it is correctly formatted."
+        },
+        {
+            "title": "How to Play Xbox Games on the Samsung Gaming Hub",
+            "excerpt": "Next, put some dummy JSON data inside this file. For demonstration purposes, the JSON data used in the example below is generated from JSON Generator. If you are using your own JSON, ensure that it is correctly formatted."
+        },
+        {
+            "title": "How to Leave a Guild in Star Wars: The Old Republic",
+            "excerpt": "Next, put some dummy JSON data inside this file. For demonstration purposes, the JSON data used in the example below is generated from JSON Generator. If you are using your own JSON, ensure that it is correctly formatted."
+        }
+
+    ]
+}
