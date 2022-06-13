@@ -1,0 +1,23 @@
+.mainSeven {
+    display: grid;
+    grid-gap: 20px;
+    margin-bottom: 20px;
+    align-items: initial;
+}
+
+@media (min-width:320px) {
+    .mainSeven {
+        grid-template-columns: repeat(1, auto);
+    }
+}
+@media (min-width:641px) {
+    .mainSeven {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (min-width:961px) {
+    .mainSeven {
+        grid-template-columns: 2fr 1fr; 
+    }
+}

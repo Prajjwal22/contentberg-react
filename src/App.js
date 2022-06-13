@@ -7,6 +7,7 @@ import MainTwo from './components/maintwo/maintwo';
 import MainFour from './components/mainfour/mainfour';
 import MainFive from './components/mainfive/mainfive';
 import MainSix from './components/mainsix/mainsix';
+import MainSeven from './components/mainseven/mainseven';
 function App() {
   // const [data,setData]=useState([]);
   // const getData=()=>{
@@ -53,6 +54,8 @@ function App() {
       <MainFour />
       <MainFive />
       <MainSix />
+      <MainFour />
+      <MainSeven/>
       <MainOne />
 
     </div>
