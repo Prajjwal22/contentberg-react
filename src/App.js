@@ -6,6 +6,7 @@ import MainOne from './components/mainone/mainone';
 import MainTwo from './components/maintwo/maintwo';
 import MainFour from './components/mainfour/mainfour';
 import MainFive from './components/mainfive/mainfive';
+import MainSix from './components/mainsix/mainsix';
 function App() {
   // const [data,setData]=useState([]);
   // const getData=()=>{
@@ -29,11 +30,11 @@ function App() {
   // useEffect(()=>{
   //   getData()
   // },[])
-  
+
   return (
     <div className="App">
 
-      <Header/>
+      <Header />
       {/* {JSON.stringify({data[3].title})} */}
       {/* <div className="cardContainer">
       <Card/>
@@ -48,12 +49,13 @@ function App() {
       <Card/>
       </div> */}
 
-<MainTwo/>
-<MainFour/>    
-<MainFive/>
-      <MainOne/>
-    
-</div>
+      <MainTwo />
+      <MainFour />
+      <MainFive />
+      <MainSix />
+      <MainOne />
+
+    </div>
   );
 }
 
