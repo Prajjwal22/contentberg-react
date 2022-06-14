@@ -9,16 +9,16 @@ function MainTwo() {
   return (
 
     <div className='mainTwo container'>
-      <div className='colLeft'>
+      <div className=''>
        <WithImgCard/>
       </div>
-      <div className='colRight'>
+      <div className=''>
       <h3 className='blockTitle'>More Featured</h3>
         <ul className='postList'>
-          <li><NoImgCard/></li>
-          <li><NoImgCard/></li>
-          <li><NoImgCard/></li>
-          <li><NoImgCard/></li>
+          <NoImgCard/>
+          <NoImgCard/>
+          <NoImgCard/>
+          <NoImgCard/>
         </ul>
       </div>
 

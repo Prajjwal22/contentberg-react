@@ -9,10 +9,7 @@ function MainSix() {
         <div className='container'>
             <h3 className='blockTitle'>Marketing</h3>
             <div className='mainSix'>
-                <div className='colLeft'>
                     <WithImgCard />
-                </div>
-                <div className='colRight'>
                     <ul className='thumbList'>
                         <li><SmallCard/></li>
                         <li><SmallCard/></li>
@@ -20,7 +17,6 @@ function MainSix() {
                         <li><SmallCard/></li>
                     </ul>
                 </div>
-            </div>
 
             <LoadMoreBtn />
 

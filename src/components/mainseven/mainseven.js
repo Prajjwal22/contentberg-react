@@ -5,6 +5,34 @@ import "../mainseven/mainseven.css";
 
 function MainSeven() {
 
+  const [sidebarWidth, setSidebarWidth] = useState(undefined);
+  const [sidebarTop, setSidebarTop] = useState(undefined);
+
+  useEffect(() => {
+    const sidebarEl = document.querySelector('.sidebar').getBoundingClientRect();
+    setSidebarWidth(sidebarEl.width);
+    setSidebarTop(sidebarEl.top);
+  }, []);
+
+  useEffect(() => {
+    if (!sidebarTop) return;
+
+    window.addEventListener('scroll', isSticky);
+    return () => {
+      window.removeEventListener('scroll', isSticky);
+    };
+  }, [sidebarTop]);
+
+  const isSticky = (e) => {
+    const sidebarEl = document.querySelector('.sidebar');
+    const scrollTop = window.scrollY;
+    if (scrollTop >= sidebarTop - 10) {
+      sidebarEl.classList.add('is-sticky');
+    } else {
+      sidebarEl.classList.remove('is-sticky');
+    }
+  }
+
   return (
     <div className="mainSeven container">
       <div className="colLeft">
@@ -20,20 +48,14 @@ function MainSeven() {
       </div>
       <div className="colRight sidebar">
         <h3 className="blockTitle">Most Commented</h3>
-        <ul className="postList">
-          <li>
-            <SmallCard />
-          </li>
-          <li>
-            <SmallCard />
-          </li>
-          <li>
-            <SmallCard />
-          </li>
-          <li>
-            <SmallCard />
-          </li>
-        </ul>
+        <SmallCard />
+        <SmallCard />
+        <SmallCard />
+        <SmallCard />
+        <SmallCard />
+        <SmallCard />
+        <SmallCard />
+
       </div>
     </div>
   );

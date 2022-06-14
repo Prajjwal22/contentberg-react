@@ -1,5 +1,5 @@
 .mainSeven {
-    display: grid;
+    display: flex;
     grid-gap: 20px;
     margin-bottom: 20px;
     align-items: initial;
@@ -9,15 +9,41 @@
     .mainSeven {
         grid-template-columns: repeat(1, auto);
     }
+    .colLeft{
+        width:100%;
+      }
+      .colRight {
+        display: none;
+      }
 }
 @media (min-width:641px) {
     .mainSeven {
         grid-template-columns: repeat(2, auto);
     }
+    .colLeft{
+        display: flex;
+        flex-direction: column;
+        width:70%;
+      }
+      .colRight {
+        display: flex;
+        flex-direction: column;
+        width:30%
+      }
 }
 
 @media (min-width:961px) {
     .mainSeven {
         grid-template-columns: 2fr 1fr; 
     }
+    .colLeft{
+        display: flex;
+        flex-direction: column;
+        width:70%;
+      }
+      .colRight {
+        display: flex;
+        flex-direction: column;
+        width:30%
+      }
 }

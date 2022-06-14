@@ -1,0 +1,27 @@
+footer {
+    background: rgb(237, 236, 236);
+}
+
+.footerWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    margin: 0 auto !important
+}
+
+.socialIcons, .footerMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.copyright {
+    color: #616161;
+    font-weight: 500;
+    letter-spacing: .11em;
+    text-align: center;
+}

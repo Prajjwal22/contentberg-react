@@ -8,6 +8,7 @@ import MainFour from './components/mainfour/mainfour';
 import MainFive from './components/mainfive/mainfive';
 import MainSix from './components/mainsix/mainsix';
 import MainSeven from './components/mainseven/mainseven';
+import Footer from './components/footer/footer';
 function App() {
   // const [data,setData]=useState([]);
   // const getData=()=>{
@@ -49,14 +50,16 @@ function App() {
 
       <Card/>
       </div> */}
-
+      <div className='Main'>
       <MainTwo />
       <MainFour />
       <MainFive />
       <MainSix />
       <MainFour />
-      <MainSeven/>
-      <MainOne />
+      <MainSeven />
+      </div>
+      {/* <MainOne /> */}
+      <Footer />
 
     </div>
   );
