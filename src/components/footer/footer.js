@@ -1,3 +1,5 @@
+import { faFacebook, faInstagram, faMixcloud, faPinterest, faTwitch, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import '../footer/footer.css'
 
@@ -6,11 +8,32 @@ function Footer() {
         <footer>
             <div className='footerWrap container'>
                 <ul className='socialIcons'>
-                    <li>Facbook</li>
-                    <li>Twitter</li>
-                    <li>Pinterest</li>
-                    <li>Mix</li>
-                    <li>Instagram</li>
+                    <li><a href='#'><FontAwesomeIcon
+                        color='white'
+                        size="lg" 
+                        icon={faFacebook}/></a>
+                        </li>
+                    <li>
+                    <FontAwesomeIcon 
+                        color='white'
+                        size="lg"
+                        icon={faTwitter}/>
+                    </li>
+                    <li><FontAwesomeIcon 
+                        color='white'
+                        size="lg"
+                        icon={faMixcloud}/>
+                        </li>
+                    <li><FontAwesomeIcon
+                        color='white'
+                        size="lg"
+                        icon={faPinterest}/>
+                        </li>
+                    <li><FontAwesomeIcon
+                        color='white'
+                        size="lg"
+                        icon={faInstagram}/>
+                        </li>
                 </ul>
                 <ul className='footerMenu'>
                     <li>Home</li>
