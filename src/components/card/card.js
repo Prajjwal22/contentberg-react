@@ -4,7 +4,7 @@ function Card() {
   return (
     <div className='card'>
         <div className="cardImg overlay">
-            <img src={Photo}/>
+            <img alt=" " src={Photo}/>
         </div>
         <div className='cardTitle'>
           <h3>Home Appliances</h3>

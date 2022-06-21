@@ -1,14 +1,14 @@
 import './App.css';
 import './components/card/card.css';
-import Header from './components/header/header';
-import MainOne from './components/mainone/mainone';
-// import Card from './components/card/card';
 import MainTwo from './components/maintwo/maintwo';
 import MainFour from './components/mainfour/mainfour';
 import MainFive from './components/mainfive/mainfive';
 import MainSix from './components/mainsix/mainsix';
 import MainSeven from './components/mainseven/mainseven';
 import Footer from './components/footer/footer';
+import { useEffect } from 'react';
+import { useState } from 'react';
+import Header1 from './components/header/header1';
 function App() {
   // const [data,setData]=useState([]);
   // const getData=()=>{
@@ -32,11 +32,24 @@ function App() {
   // useEffect(()=>{
   //   getData()
   // },[])
+const [state,setstate]=useState();
+
+  useEffect(() => {
+    async function fetchNews(){
+      const data = await fetch('https://fortnite-api.com/v2/news/br');
+
+      const items = await data.json();
+      setstate(items.data.motds);
+  }
+    fetchNews();
+  
+  }, []);
+  
 
   return (
     <div className="App">
-
-      <Header />
+      <Header1/>
+      {/* <Header /> */}
       {/* {JSON.stringify({data[3].title})} */}
       {/* <div className="cardContainer">
       <Card/>
@@ -51,12 +64,12 @@ function App() {
       <Card/>
       </div> */}
       <div className='Main'>
-      <MainTwo />
-      <MainFour />
-      <MainFive />
-      <MainSix />
-      <MainFour />
-      <MainSeven />
+      <MainTwo data={state}/>
+      <MainFour data ={state}/>
+      <MainFive data={state} />
+      <MainSix data={state} />
+      <MainFour data={state}/>
+      <MainSeven data={state}/>
       </div>
       {/* <MainOne /> */}
       <Footer />

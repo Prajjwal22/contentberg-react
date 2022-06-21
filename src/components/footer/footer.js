@@ -1,4 +1,4 @@
-import { faFacebook, faInstagram, faMixcloud, faPinterest, faTwitch, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faInstagram, faMixcloud, faPinterest, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import '../footer/footer.css'

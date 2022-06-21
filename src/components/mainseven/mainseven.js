@@ -3,14 +3,14 @@ import SmallCard from "../smallcard/smallcard";
 import WithImgCard from "../withimgcard/withimgcard";
 import "../mainseven/mainseven.css";
 
-function MainSeven() {
+function MainSeven({data}) {
 
-  const [sidebarWidth, setSidebarWidth] = useState(undefined);
+  // const [sidebarWidth, setSidebarWidth] = useState(undefined);
   const [sidebarTop, setSidebarTop] = useState(undefined);
 
   useEffect(() => {
     const sidebarEl = document.querySelector('.sidebar').getBoundingClientRect();
-    setSidebarWidth(sidebarEl.width);
+    // setSidebarWidth(sidebarEl.width);
     setSidebarTop(sidebarEl.top);
   }, []);
 
@@ -21,7 +21,7 @@ function MainSeven() {
     return () => {
       window.removeEventListener('scroll', isSticky);
     };
-  }, [sidebarTop]);
+  });
 
   const isSticky = (e) => {
     const sidebarEl = document.querySelector('.sidebar');
@@ -37,24 +37,24 @@ function MainSeven() {
     <div className="mainSeven container">
       <div className="colLeft">
         <h3 className="blockTitle">Marketing</h3>
+        {data?.map(res =><WithImgCard data={res}/>)}
+        {/* <WithImgCard />
         <WithImgCard />
         <WithImgCard />
         <WithImgCard />
         <WithImgCard />
         <WithImgCard />
-        <WithImgCard />
-        <WithImgCard />
-        <WithImgCard />
+        <WithImgCard /> */}
       </div>
       <div className="colRight sidebar">
         <h3 className="blockTitle">Most Commented</h3>
+        {data?.map(res => <SmallCard data={res} />)}
+        {/* <SmallCard />
         <SmallCard />
         <SmallCard />
         <SmallCard />
         <SmallCard />
-        <SmallCard />
-        <SmallCard />
-        <SmallCard />
+        <SmallCard /> */}
 
       </div>
     </div>

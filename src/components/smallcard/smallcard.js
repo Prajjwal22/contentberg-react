@@ -1,15 +1,14 @@
 import React from 'react'
-import FeatImg from '../../assets/maintwo-card.jpg'
 import '../smallcard/smallcard.css'
 
-function SmallCard() {
+function SmallCard({data}) {
     return (
         <div className='cardThumb'>
             <div className='bigOneImg'>
-                <img src={FeatImg} alt="Card Image" />
+                <img src={data?.image} alt="Card" />
             </div>
             <div>
-                <h3 className='medTitle'>How to Dualboot Backtrack Alongside Windows 10</h3>
+                <h3 className='medTitle'>{data?.title}</h3>
             </div>
         </div>
     )

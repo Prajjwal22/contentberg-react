@@ -11,8 +11,8 @@ export default function Header() {
           <div className='siteLogo'>
             <img src={Logo} alt="Site Logo" />
           </div>
-          <input class="mobMenu" type="checkbox" id="mobMenu" />
-          <label class="hamb" for="mobMenu"><span class="hamb-line"></span></label>
+          <input className="mobMenu" type="checkbox" id="mobMenu" />
+          <label className="hamb" htmlFor="mobMenu"><span className="hamb-line"></span></label>
           <div className='siteMenu'>
             <ul className='menuLinks'>
               <li>Home</li>

@@ -3,23 +3,19 @@ import '../maintwo/maintwo.css'
 import NoImgCard from '../noimgcard/noimgcard'
 import WithImgCard from '../withimgcard/withimgcard'
 
-function MainTwo() {
+function MainTwo({data}) {
   
 
   return (
 
     <div className='mainTwo container'>
       <div className=''>
-       <WithImgCard/>
+      {data?.slice(0,1).map(res => <WithImgCard data={res}/>)} 
       </div>
       <div className=''>
       <h3 className='blockTitle'>More Featured</h3>
-        <ul className='postList'>
-          <NoImgCard/>
-          <NoImgCard/>
-          <NoImgCard/>
-          <NoImgCard/>
-        </ul>
+      <ul className='postList'> {data?.slice(0,6).map(res => 
+          <NoImgCard  data={res}/>)} </ul>
       </div>
 
     </div>

@@ -3,13 +3,13 @@ import WithImgCard from '../withimgcard/withimgcard'
 import '../mainfour/mainfour.css'
 import LoadMoreBtn from '../loadmorebtn/loadmorebtn'
 
-function MainFour() {
+function MainFour({data}) {
   return (
     <div className='container'>
       <h3 className='blockTitle'>More Featured</h3>
       <div className='mainFour'>
-        <WithImgCard />
-        <WithImgCard />
+      {data?.slice(2,5).map(res =>  <WithImgCard data={res}/>)} 
+        {/* <WithImgCard /> */}
       </div>
       <LoadMoreBtn />
     </div>

@@ -1,11 +1,11 @@
 import React from 'react'
 import '../../components/noimgcard/noimgcard.css'
 
-function NoImgCard() {
+function NoImgCard({data}) {
   return (
     <div className='listCard'>
-      <span className='meta tag'>Marketing</span>
-      <h3 className='medtitle'>How to Dualboot Backtrack Along Side Windows 10</h3>
+      <span className='meta tag'>{data?.tabTitle}</span>
+      <h3 className='medtitle'>{data?.title}</h3>
       <div className='meta dateMeta'>
         <time className='pubDate'>
           Aug 14 2018
